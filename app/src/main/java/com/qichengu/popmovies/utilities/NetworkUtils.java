@@ -16,13 +16,19 @@ package com.qichengu.popmovies.utilities;
  * limitations under the License.
  */
 
+import android.content.res.Resources;
 import android.net.Uri;
+
+import com.qichengu.popmovies.R;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Scanner;
+
+import static java.security.AccessController.getContext;
 
 /**
  * These utilities will be used to communicate with the network.

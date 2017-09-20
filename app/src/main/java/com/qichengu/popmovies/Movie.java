@@ -7,7 +7,7 @@ class Movie {
     final double vote_average;
     final String synopsis;
     final String release_date;
-    public Movie(String title, String url, double vote_average, String synopsis, String release_date) {
+    Movie(String title, String url, double vote_average, String synopsis, String release_date) {
         this.title = title;
         this.posterUrl = url;
         this.vote_average = vote_average;

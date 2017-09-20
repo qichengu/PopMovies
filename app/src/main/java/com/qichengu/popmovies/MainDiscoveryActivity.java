@@ -120,6 +120,7 @@ public class MainDiscoveryActivity extends AppCompatActivity {
     private void makePopMoviesSearchQuery(String choice) {
         if (!isOnline()) {
             Toast.makeText(getApplicationContext(), "not online", Toast.LENGTH_SHORT).show();
+            return;
         }
         URL movieSearchUrl = NetworkUtils.buildUrl(choice);
         new movieListQueryTask().execute(movieSearchUrl);

@@ -20,7 +20,7 @@ class CustomListAdapter extends ArrayAdapter<Movie> {
      * @param context        The current context. Used to inflate the layout file.
      * @param movies A List of AndroidFlavor objects to display in a list
      */
-    public CustomListAdapter(Activity context, List<Movie> movies) {
+    CustomListAdapter(Activity context, List<Movie> movies) {
         // Here, we initialize the ArrayAdapter's internal storage for the context and the list.
         // the second argument is used when the ArrayAdapter is populating a single TextView.
         // Because this is a custom adapter for two TextViews and an ImageView, the adapter is not
